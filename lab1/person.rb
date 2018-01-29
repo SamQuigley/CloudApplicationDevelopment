@@ -8,9 +8,12 @@ class Person
   end
 
     def greeting
-        "Hello #{@name} and #{@age}"
+        "Hello #{@name}, you're  #{@age}"
       end
     end
   
 person = Person.new("Sam", "21")
+puts person.name
+puts person.age
+person.name="John"
 puts person.greeting
